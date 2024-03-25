@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Portfolio - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+
+<nav>
+  <ul>
+    <a href="bio.html">bio</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+    <a href="styleGuide.html">style Guide</a>
+</ul>
+</nav>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- for in-text link, I used the robot page example from the lecture to learn how to add a link -->
+
+      <div class="story-content">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://example.com/" target="_blank"&gt;Example Website&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <ol>
+
+          <li>
+            <a href="https://example.com/" target="_blank">Example Website</a>
+          </li>
+        </ol>
+
+      </div>
+
+
+      <!-- Default Button styling section -->
+
+        <div class="story-content">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </div>
+
+
+
+        <div class="story-content">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a  class="button"&gt;Submit&lt;/a&gt;</code>
+        <code>&lt;a  class="button"&gt;Reset&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Submit</a>
+        <a class="button-nav" href="#">Reset</a>
+      </div>
+
+
+
+
+        <div class="story-content">
+        <h3>Text Input Field with Label</h3>
+
+        <!-- for the text input, I also used the example from the lecture where users can submit a comment in the page -->
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="textInput"&gt;comment&lt;/label&gt;</code>
+        <code>&lt;input type="textInput"&gt;Type here...&lt;/input&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <label for="textInput">comment:</label>
+        <input type="text" id="textInput" name="textInput" placeholder="Type here...">
+      </div>
+
+
+        <div class="story-content">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="firstOne"/label&gt;</code>
+        <code>&lt;input type="radio"&gt;first&lt;/input&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <label for="firstOne">
+            <input type="radio" id="firtOne" name="radioGroup"> first
+        </label>
+      </div>
+
+
+
+
+
+        <div class="story-content">
+        <h3>Image as a Link</h3>
+
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="product_page.html" src="img/calendar.jpg" alt="calendar";/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <a href="project1.html">
+            <img src="img/calendar.jpg" alt="calendar">
+        </a>
+      </div>
+
+
+        </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+        <div class="story-content">
+
+        <h3>Headings</h3>
+
+        <!-- for Headings, it was easy to code them, however, I got some help from the TA to complete the sample code part -->
+
+        <h4>CSS selector:</h4>
+        <p>.h2</p>
+        <p>.h3</p>
+        <p>.h4</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;- First Heading -&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;- Second Heading -&lt;/h2&gt;</code>
+        <code>&lt;h33&gt;- Third Heading -&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;- Fourth Heading -&lt;/h4&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <h1>- First Heading -<h1>
+        <h2>- Second Heading -<h2>
+        <h3>- Third Heading -<h3>
+        <h4>- Fourth Heading -<h4>
+        </div>
+
+
+        <div class="story-content">
+        <h3>Paragraphs</h3>
+
+        <!-- For the paragraph, it was easy to figure out how to do it by looking at how other paragraphs were done in this page  -->
+
+        <h4>CSS selector:</h4>
+        <p>.p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.
+        </p>
+      </div>
+
+
+
+        <div class="story-content">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.element</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        </div>
+
+
+
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+        <div class="story-content">
+
+        <h3>Main Navigation</h3>
+
+        <nav>
+          <ul>
+            <a href="bio.html">bio</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+            <a href="styleGuide.html">style Guide</a>
+        </ul>
+        </nav>
+
+      </div>
+
+        <div class="story-content">
+        <h3>projects</h3>
+
+        <div class="product-listing">
+            <div class="product-item">
+              <a href="project1.html">
+                <img src="img/calendar.jpg" alt="Product 1">
+              </a>
+              <h4>Digital Wall Calendar</h4>
+              <p>$35.99</p>
+              <a class="button-nav" href="checkout.html">Add to cart</a>
+            </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="about">
+
+      <div class="story-content">
+
+      <h3>Font</h3>
+
+      <p> - Monospace - </p>
+
+      <p>Body: 1rem</p>
+      <p>p: 1rem</p>
+      <p>h1: 1em</p>
+      <p>h2: 1.5em</p>
+
+      <h3>Color Palette</h3>
+
+      <figure>
+        <img src="img/colors.png" alt="color palette">
+      </figure>
+
+    </div>
+
+
+    </section>
+
+
+
+    <section id="citations">
+
+
+      <h2>Citations</h2>
+
+      <div class="story-content">
+
+      <ul>
+      </ul>
+
+    </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+  </body>
+</html>

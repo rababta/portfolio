@@ -1,0 +1,49 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically if the container has a defined height */
+  flex-wrap: wrap;
+
+}
+
+.container .block {
+  height: 200px;
+  height: auto;
+  flex-grow: 1;
+  flex-basis: 15rem;
+}
+
+.container .block p, h4 {
+  padding: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 68rem) {
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+.container .block a {
+  display: block;
+  padding: 10px;
+}
+
+.container .block img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.container .block .button-nav {
+  display: inline-block;
+}

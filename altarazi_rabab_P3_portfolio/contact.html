@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Portfolio - contact</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <script src="submitcontact.js"></script>
+  </head>
+
+  <body>
+
+
+
+<nav>
+  <ul>
+    <a href="bio.html">bio</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+    <a href="styleGuide.html">style Guide</a>
+</ul>
+</nav>
+
+<section class="story-section">
+  <div class= "our-story">
+    <h1>contact me</h1>
+
+    <section id="feedback">
+    <form id="contactForm" action="/submit_form" method="post">
+
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+
+<div id="messageContainer"></div>
+
+
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+  </body>
+</html>
