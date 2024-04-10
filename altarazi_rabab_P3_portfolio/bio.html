@@ -15,21 +15,46 @@
   <body>
 
 
-
-    <nav>
-      <ul>
-        <a href="bio.html">bio</a>
-        <a href="projects.html">projects</a>
-        <a href="contact.html">contact</a>
-        <a href="styleGuide.html">style Guide</a>
-    </ul>
+    <nav id="PC-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div>
+      <ul class="nav-links">
+        <li><a href="bio.html">bio</a></li>
+        <li><a href=#experience>experience</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="styleGuide.html">style Guide</a></li>
+      </ul>
+    </div>
     </nav>
 
+    <nav id="ham-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class ="menu-links">
+          <li><a href="bio.html" onclick="toggleMenu()" >bio</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" >experience</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" >projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" >contact</a></li>
+          <li><a href="styleGuide.html" onclick="toggleMenu()" >style Guide</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
 
 
+
+
+
+    <!--
     <div class="home-container">
 
-    <!-- bio intro -->
+
     <div class="home-box">
 
       <h2>about me</h2>
@@ -43,6 +68,7 @@
 
 
     </div>
+  -->
 
 
 
