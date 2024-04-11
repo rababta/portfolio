@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>portfolio - bio</title>
+    <title>Portfolio - Bio</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
@@ -19,11 +19,10 @@
       <div class="logo"> Rabab Altarazi</div>
       <div>
       <ul class="nav-links">
-        <li><a href="bio.html">bio</a></li>
-        <li><a href=#experience>experience</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="styleGuide.html">style Guide</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="styleGuide.html">Style Guide</a></li>
       </ul>
     </div>
     </nav>
@@ -37,46 +36,64 @@
           <span></span>
         </div>
         <div class ="menu-links">
-          <li><a href="bio.html" onclick="toggleMenu()" >bio</a></li>
-          <li><a href="#experience" onclick="toggleMenu()" >experience</a></li>
-          <li><a href="projects.html" onclick="toggleMenu()" >projects</a></li>
-          <li><a href="contact.html" onclick="toggleMenu()" >contact</a></li>
-          <li><a href="styleGuide.html" onclick="toggleMenu()" >style Guide</a></li>
+          <li><a href="bio.html" onclick="toggleMenu()" >Bio</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" >Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+          <li><a href="styleGuide.html" onclick="toggleMenu()" >Style Guide</a></li>
         </div>
       </div>
     </nav>
-    <script src="script.js"></script>
 
-
-
-
-
-    <!--
-    <div class="home-container">
-
-
-    <div class="home-box">
-
-      <h2>about me</h2>
-      <p> I'm Rabab Altarazi, a student in the Interactive Arts and technology program at SFU. During my studies, I developed skills in
-      UX design and 3D design, two streams that I'm very passionate about. I'm specifically looking for a UX design job opportinuty because
-      I like the process of creating a user interface, the visual aspect of a website, or an app. I'm professiont in layout, color, and creating a user-centred design.</p>
-      <a class="button-nav" href="projects.html">View Projects</a>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./files/Bubbles.jpg" alt="Rabab Altarazi's picture"/>
       </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rabab Altarazi</h1>
+        <p class="section__text__p2">UX Designer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./files/resume.pdf')">Download Resume</button> <!-- will open another window for pdf -->
+          <button class="btn btn-color-1" onclick="location.href='./contact.html'">Contact Me</button>
+        </div>
+        <dive id="socials-container">
+          <img src="./files/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rabab-altarazi/'"/>
+        </div>
+      </div>
+    </section>
 
-    </div>
 
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./files/Bubbles2.jpg" alt="Profile Picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-containers">
+              <img src="./files/education.png" alt="Education Icon" class="icon"/>
+              <h3>Education</h3>
+              <p>Bachelors of <br />Interactive Arts<br />and Technology</p>
+            </div>
+            <div class="details-containers">
+              <img src="./files/experience.png" alt="Eperience Icon" class="icon"/>
+              <h3>Job Experience</h3>
+              <p>2+ years of <br /> Campaign<br />Leadership</p>
+            </div>
+          </div>
+          <div class="text-container" >
+            <p>(CHANGE) I'm Rabab Altarazi, a student in the Interactive Arts and technology program at SFU. During my studies, I developed skills in
+            UX design and 3D design, two streams that I'm very passionate about. I'm specifically looking for a UX design job opportinuty because
+            I like the process of creating a user interface, the visual aspect of a website, or an app. I'm professiont in layout, color, and creating a user-centred design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
-  -->
-
-
-
-
-
-
-
-
+    <script src="script.js"></script>
 
 
   </body>
