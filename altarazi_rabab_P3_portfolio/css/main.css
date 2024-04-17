@@ -281,7 +281,7 @@ section {
   display: flex;
 }
 
-.about-pic {
+.bio-pic {
   border-radius: 2rem;
 }
 
@@ -304,4 +304,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
