@@ -4,54 +4,112 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Portfolio - contact</title>
+    <title>Portfolio - Projects</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
-    <script src="submitcontact.js"></script>
+
   </head>
 
   <body>
 
 
+    <nav id="PC-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div>
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="styleGuide.html">Style Guide</a></li>
+      </ul>
+    </div>
+    </nav>
 
-<nav>
-  <ul>
-    <a href="bio.html">bio</a>
-    <a href="projects.html">projects</a>
-    <a href="contact.html">contact</a>
-    <a href="styleGuide.html">style Guide</a>
-</ul>
-</nav>
+    <nav id="ham-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class ="menu-links">
+          <li><a href="bio.html" onclick="toggleMenu()" >Bio</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" >Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+          <li><a href="styleGuide.html" onclick="toggleMenu()" >Style Guide</a></li>
+        </div>
+      </div>
+    </nav>
 
-<section class="story-section">
-  <div class= "our-story">
-    <h1>contact me</h1>
-
-    <section id="feedback">
-    <form id="contactForm" action="/submit_form" method="post">
-
-
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="subject">Subject:</label><br>
-    <input type="text" id="subject" name="subject" required><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-    <input type="submit" value="Submit">
-  </form>
-
-<div id="messageContainer"></div>
-
-
-  </div>
-  </div>
-  </section>
+    <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
 
 
+    <div class="contact-info-upper-container">
+      <form id="contactForm"action="/submit_form" method="post">
 
+
+      <label for="name" >Name:</label><br>
+      <input type="text" id="name" name="name" class="contact-info-upper-container" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" class="contact-info-upper-container" required><br>
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" class="contact-info-upper-container" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" class="contact-info-upper-container" required></textarea><br>
+      <input type="submit" value="Submit" class="btn btn-color-1">
+      </form>
+
+      <div id="messageContainer"></div>
+    </div>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./files/education.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:raltaraz@sfu.ca">raltaraz@sfu.ca</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./files/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+  <footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="styleGuide.html">Style Guide</a></li>
+      </ul>
+    </div>
+ </nav>
+ </footer>
+
+
+     <script src="script.js"></script>
+     <script src="submitcontact.js"></script>
 
 
 

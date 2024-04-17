@@ -384,3 +384,44 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 10vh;
+}
+
+.contact-info-upper-container {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 2rem;
+  border: 1px solid rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info-container p {
+  font-size: 16px;
+}
+
+.contact-icon {
+  cursor: default;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
