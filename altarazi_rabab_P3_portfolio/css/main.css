@@ -178,6 +178,10 @@ section {
   margin: auto 0;
 }
 
+.section__pic-container img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -307,7 +311,7 @@ section {
 }
 
 
-/* PROJECTS SECTION */
+/* PROJECTS PAGE */
 
 #projects {
   position: relative;
@@ -337,6 +341,36 @@ section {
 .project-title {
   margin: 1rem;
   color: black;
+}
+
+/* EACH PROJECT PAGE */
+
+.project p{
+  text-align: left;
+}
+
+.project-pic {
+  border-radius: 2rem;
+}
+
+.proj_pic {
+  flex: 2;
+}
+
+.proj_pic img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: auto;
+}
+
+.proj {
+  flex: 1;
+}
+
+.project_intro p{
+
+  text-align:center;
+
 }
 
 
