@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>portfolio - projects</title>
+    <title>Portfolio - Projects</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
@@ -14,15 +14,73 @@
   <body>
 
 
-<nav>
-  <ul>
-    <a href="bio.html">bio</a>
-    <a href="projects.html">projects</a>
-    <a href="contact.html">contact</a>
-    <a href="styleGuide.html">style Guide</a>
-</ul>
-</nav>
+    <nav id="PC-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div>
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="styleGuide.html">Style Guide</a></li>
+      </ul>
+    </div>
+    </nav>
 
+    <nav id="ham-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class ="menu-links">
+          <li><a href="bio.html" onclick="toggleMenu()" >Bio</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" >Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+          <li><a href="styleGuide.html" onclick="toggleMenu()" >Style Guide</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="section-container">
+    <div class="about-details-container">
+      <div class="about-containers">
+        <a href="project1.html" class="details-containers color-container">
+          <div>
+            <img src="./files/tinder.jpg" alt="Education Icon" class="project-img"/>
+            <h3 class="project-title">New Tinder Feature</h3>
+          </div>
+        </a>
+
+        <a href="project2.html" class="details-containers color-container">
+          <div>
+            <img src="./files/paws.png" alt="Eperience Icon" class="project-img"/>
+            <h3 class="project-title">Pet Adoption App</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="styleGuide.html">Style Guide</a></li>
+      </ul>
+    </div>
+ </nav>
+ </footer>
+
+
+<!--
       <div class="container">
         <div class="block">
 
@@ -54,6 +112,7 @@
 
 
       </div>
+  -->
 
 
 
