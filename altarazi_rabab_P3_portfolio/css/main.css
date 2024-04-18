@@ -13,6 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: rgb(213, 234, 245);
 }
 
 html {
@@ -42,9 +43,36 @@ nav {
 }
 
 .nav-links {
+  display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: grey;
+}
+
+.nav-links li a::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+  transform: scaleX(0);
+  transition: transform 0.3s ease; 
+}
+
+.nav-links li a:hover::before {
+  transform: scaleX(1);
 }
 
 a {
@@ -203,6 +231,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: rgb(209, 77, 170);
 }
 
 #socials-container {
@@ -236,7 +265,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(209, 77, 170) 0.1rem solid;
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -244,16 +273,18 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(209, 77, 170);
   color: white;
+  bo
 }
 
 .btn-color-1:hover{
-  background: rgb(0,0,0);
+  background: rgb(84, 30, 68);
+  border-color: rgb(84, 30, 68);
 }
 
 .btn-color-2{
-  background: none;
+  background: white;
 }
 
 .btn-color-2:hover{
@@ -324,7 +355,7 @@ section {
 
 .color-container:hover {
   border-color: white;
-  background: rgb(53, 53, 53);
+  background: rgb(209, 77, 170);
   text-decoration: none;
 }
 
