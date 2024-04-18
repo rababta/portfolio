@@ -38,15 +38,13 @@
           <li><a href="bio.html" onclick="toggleMenu()" >Bio</a></li>
           <li><a href="projects.html" onclick="toggleMenu()" >Projects</a></li>
           <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
-          <li><a href="styleGuide.html" onclick="toggleMenu()" >Style Guide</a></li>
         </div>
       </div>
     </nav>
 
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h1 class="title">Interactive Elements</h1>
+    <section id="website_elements">
+      <h1 class="title">Portfolio Style Guide</h1>
 
 
       <div class="section-container">
@@ -146,22 +144,7 @@
   </label>
   </div>
 
-  <div class="details-containers">
-  <h3>Image</h3>
 
-
-  <h4>CSS selector:</h4>
-  <p> .section__pic-container bio-pic / proj_pic / project-pic </p>
-
-  <h4>Sample code:</h4>
-  <code>&lt;div class="section__pic-container";/div&gt;</code>
-  <code>&lt;img src="./files/bubbles.jpg" alt="Rabab Altarazi's picture";/a&gt;class="bio-pic";/img&ly;</code>
-
-  <h4>Rendered element:</h4>
-
-  <div class="section__pic-container">
-    <img src="./files/Bubbles.jpg" alt="Rabab Altarazi's picture" class="bio-pic"/>
-  </div>
 
 <!--
   <a href="project1.html">
@@ -177,169 +160,132 @@
 </div>
 </div>
 
+<div class="section-container">
+  <div class="about-details-container">
+    <div class="about-containers">
+
+  <div class="details-containers">
+    <h3>Headings</h3>
+
+    <!-- for Headings, it was easy to code them, however, I got some help from the TA to complete the sample code part -->
+
+    <h4>CSS selector:</h4>
+    <p>.h1</p>
+    <p>.h3</p>
+
+    <h4>Sample code:</h4>
+    <code>&lt;h1&gt;- First Heading -&lt;/h1&gt;</code>
+    <code>&lt;h33&gt;- Third Heading -&lt;/h3&gt;</code>
+
+    <h4>Rendered element:</h4>
+
+    <h1>- First Heading -<h1>
+    <h3>- Third Heading -<h3>
+</div>
+
+<div class="details-containers">
+  <h3>Paragraphs</h3>
+
+  <!-- For the paragraph, it was easy to figure out how to do it by looking at how other paragraphs were done in this page  -->
+
+  <h4>CSS selector:</h4>
+  <p>.p</p>
+
+  <h4>Sample code:</h4>
+  <code>&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;</code>
+
+  <h4>Rendered element:</h4>
+
+  <p>
+    Lorem ipsum dolor sit amet.
+  </p>
+</label>
+</div>
+
+<div class="details-containers">
+
+  <h3>Font</h3>
+
+  <p> - Montserrat - </p>
+
+</div>
+
+
+
+<!--
+<a href="project1.html">
+    <img src="img/calendar.jpg" alt="calendar">
+</a>
+-->
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="section-container">
+  <div class="about-details-container">
+    <div class="about-containers">
+
+  <div class="details-containers">
+    <h3>Main Navigation</h3>
+
+    <nav id="PC-nav">
+      <div>
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+
+</div>
+
+<div class="details-containers">
+  <h3>Projects</h3>
+
+  <div class="about-containers">
+    <a href="project1.html" class="details-containers color-container">
+      <div>
+        <img src="./files/tinder.jpg" alt="Tinder project cover" class="project-img"/>
+        <h3 class="project-title">New Tinder Feature</h3>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+
+
+<!--
+<a href="project1.html">
+    <img src="img/calendar.jpg" alt="calendar">
+</a>
+-->
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
 
 </section>
 
 
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-        <div class="story-content">
-
-        <h3>Headings</h3>
-
-        <!-- for Headings, it was easy to code them, however, I got some help from the TA to complete the sample code part -->
-
-        <h4>CSS selector:</h4>
-        <p>.h2</p>
-        <p>.h3</p>
-        <p>.h4</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;h1&gt;- First Heading -&lt;/h1&gt;</code>
-        <code>&lt;h2&gt;- Second Heading -&lt;/h2&gt;</code>
-        <code>&lt;h33&gt;- Third Heading -&lt;/h3&gt;</code>
-        <code>&lt;h4&gt;- Fourth Heading -&lt;/h4&gt;</code>
-
-        <h4>Rendered element:</h4>
-
-        <h1>- First Heading -<h1>
-        <h2>- Second Heading -<h2>
-        <h3>- Third Heading -<h3>
-        <h4>- Fourth Heading -<h4>
-        </div>
-
-
-        <div class="story-content">
-        <h3>Paragraphs</h3>
-
-        <!-- For the paragraph, it was easy to figure out how to do it by looking at how other paragraphs were done in this page  -->
-
-        <h4>CSS selector:</h4>
-        <p>.p</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.&lt;/p&gt;</code>
-
-        <h4>Rendered element:</h4>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt magna mattis est tempus varius. Fusce mollis et justo et porta. Donec scelerisque sapien ac neque mattis, vehicula volutpat quam vestibulum. Nulla blandit pretium mi, vitae accumsan metus egestas at. Integer a tincidunt enim. Morbi quis nunc vel lacus viverra dignissim. Duis in vestibulum nunc.
-        </p>
-      </div>
-
-
-
-        <div class="story-content">
-        <h3>Numbered Lists</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.element</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
-        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
-        <code>&lt;li&gt;First Item&lt;/li&gt;</code>
-
-        <h4>Rendered element:</h4>
-
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ol>
-        </div>
 
 
 
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
 
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-
-        <div class="story-content">
-
-        <h3>Main Navigation</h3>
-
-        <nav>
-          <ul>
-            <a href="bio.html">bio</a>
-            <a href="projects.html">projects</a>
-            <a href="contact.html">contact</a>
-            <a href="styleGuide.html">style Guide</a>
-        </ul>
-        </nav>
-
-      </div>
-
-        <div class="story-content">
-        <h3>projects</h3>
-
-        <div class="product-listing">
-            <div class="product-item">
-              <a href="project1.html">
-                <img src="img/calendar.jpg" alt="Product 1">
-              </a>
-              <h4>Digital Wall Calendar</h4>
-              <p>$35.99</p>
-              <a class="button-nav" href="checkout.html">Add to cart</a>
-            </div>
-
-        </div>
-
-      </div>
-
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-    <section id="about">
-
-      <div class="story-content">
-
-      <h3>Font</h3>
-
-      <p> - Monospace - </p>
-
-      <p>Body: 1rem</p>
-      <p>p: 1rem</p>
-      <p>h1: 1em</p>
-      <p>h2: 1.5em</p>
-
-      <h3>Color Palette</h3>
-
-      <figure>
-        <img src="img/colors.png" alt="color palette">
-      </figure>
-
-    </div>
-
-
-    </section>
-
-
-
-    <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="citations.html">Citations</a></li>
-          <li><a href="styleGuide.html">Style Guide</a></li>
-          <li><a href="https://github.com/rababta/portfolio/tree/main/altarazi_rabab_P3_portfolio">Github</a></li>
-        </ul>
-      </div>
-   </nav>
-   </footer>
 
     <script src="script.js"></script>
 

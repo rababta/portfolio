@@ -377,10 +377,10 @@ section {
 /* FOOTER SECTION */
 
 footer {
-  clear: both; /* Clear any floated elements */
-  margin-top: 20px; /* Add some space above the footer */
-  padding: 20px; /* Add padding to the footer */
-  text-align: center; /* Center-align the content */
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 footer p {
