@@ -4,150 +4,183 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Portfolio - Style Guide</title>
+    <title>Portfolio - Bio</title>
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
 
   </head>
 
   <body>
 
 
+    <nav id="PC-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div>
+      <ul class="nav-links">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
 
-<nav>
-  <ul>
-    <a href="bio.html">bio</a>
-    <a href="projects.html">projects</a>
-    <a href="contact.html">contact</a>
-    <a href="styleGuide.html">style Guide</a>
-</ul>
-</nav>
+    <nav id="ham-nav">
+      <div class="logo"> Rabab Altarazi</div>
+      <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class ="menu-links">
+          <li><a href="bio.html" onclick="toggleMenu()" >Bio</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()" >Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()" >Contact</a></li>
+          <li><a href="styleGuide.html" onclick="toggleMenu()" >Style Guide</a></li>
+        </div>
+      </div>
+    </nav>
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+      <h1 class="title">Interactive Elements</h1>
 
-      <!-- for in-text link, I used the robot page example from the lecture to learn how to add a link -->
 
-      <div class="story-content">
-        <h3>In-text link</h3>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-containers">
+              <h3>In-text link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.element</p>
+              <h4>CSS selector:</h4>
+              <p>.nav-links</p>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="https://example.com/" target="_blank"&gt;Example Website&lt;/a&gt;</code>
+              <h4>Sample code:</h4>
+              <code>&lt;a href="https://example.com/" target="_blank"&gt;Example Website&lt;/a&gt;</code>
 
-        <h4>Rendered element:</h4>
+              <h4>Rendered element:</h4>
 
-        <ol>
+              <ol>
 
-          <li>
-            <a href="https://example.com/" target="_blank">Example Website</a>
-          </li>
-        </ol>
+                <li>
+                  <a href="https://example.com/" target="_blank">Example Website</a>
+              </li>
+              </ol>
+        </div>
+
+        <div class="details-containers">
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.nav-links</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="nav-links"&gt;Navlink&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="nav-links" href="#">Navlink</a>
 
       </div>
 
 
-      <!-- Default Button styling section -->
+        <div class="details-containers">
+          <h3>Sample Buttons</h3>
 
-        <div class="story-content">
-        <h3>Navigation Link</h3>
+          <h4>CSS selector:</h4>
+          <p>btn btn-color-1</p>
+          <p>btn btn-color-2</p>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+          <h4>Sample code:</h4>
+          <code>&lt;a  class="btn btn-color-1"&gt;Button 1&lt;/a&gt;</code>
+          <code>&lt;a  class="btn btn-color-2"&gt;Button 2&lt;/a&gt;</code>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-      </div>
-
-
-
-        <div class="story-content">
-        <h3>Submit/Reset Buttons</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a  class="button"&gt;Submit&lt;/a&gt;</code>
-        <code>&lt;a  class="button"&gt;Reset&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Submit</a>
-        <a class="button-nav" href="#">Reset</a>
-      </div>
+          <h4>Rendered element:</h4>
+          <button class="btn btn-color-1" href="#">Button 1</button>
+          <button class="btn btn-color-2" href="#">Button 2</button>
+        </div>
 
 
+    </div>
+  </div>
+</div>
+
+  <div class="section-container">
+    <div class="about-details-container">
+      <div class="about-containers">
+
+    <div class="details-containers">
+    <h3>Text Input Field with Label</h3>
+
+    <!-- for the text input, I also used the example from the lecture where users can submit a comment in the page -->
+
+    <h4>CSS selector:</h4>
+    <p>contact-info-upper-container</p>
+
+    <h4>Sample code:</h4>
+    <code>&lt;label for="textInput"&gt;comment&lt;/label&gt;</code>
+    <code>&lt;input type="textInput"&gt;Type here...&lt;/input&gt;class="contact-info-upper-container"&lt;</code>
+
+    <h4>Rendered element:</h4>
+
+    <label for="textInput">comment:</label>
+    <input type="text" id="textInput" name="textInput" placeholder="Type here..." class="contact-info-upper-container">
+  </div>
+
+  <div class="details-containers">
+  <h3>Radio Button with Label</h3>
+
+  <h4>CSS selector:</h4>
+  <p>none</p>
+
+  <h4>Sample code:</h4>
+  <code>&lt;label for="firstOne"/label&gt;</code>
+  <code>&lt;input type="radio"&gt;first&lt;/input&gt;</code>
+
+  <h4>Rendered element:</h4>
+
+  <label for="firstOne">
+      <input type="radio" id="firtOne" name="radioGroup"> first
+  </label>
+  </div>
+
+  <div class="details-containers">
+  <h3>Image</h3>
 
 
-        <div class="story-content">
-        <h3>Text Input Field with Label</h3>
+  <h4>CSS selector:</h4>
+  <p> .section__pic-container bio-pic / proj_pic / project-pic </p>
 
-        <!-- for the text input, I also used the example from the lecture where users can submit a comment in the page -->
+  <h4>Sample code:</h4>
+  <code>&lt;div class="section__pic-container";/div&gt;</code>
+  <code>&lt;img src="./files/bubbles.jpg" alt="Rabab Altarazi's picture";/a&gt;class="bio-pic";/img&ly;</code>
 
-        <h4>CSS selector:</h4>
-        <p>.element</p>
+  <h4>Rendered element:</h4>
 
-        <h4>Sample code:</h4>
-        <code>&lt;label for="textInput"&gt;comment&lt;/label&gt;</code>
-        <code>&lt;input type="textInput"&gt;Type here...&lt;/input&gt;</code>
+  <div class="section__pic-container">
+    <img src="./files/Bubbles.jpg" alt="Rabab Altarazi's picture" class="bio-pic"/>
+  </div>
 
-        <h4>Rendered element:</h4>
-
-        <label for="textInput">comment:</label>
-        <input type="text" id="textInput" name="textInput" placeholder="Type here...">
-      </div>
-
-
-        <div class="story-content">
-        <h3>Radio Button with Label</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.element</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;label for="firstOne"/label&gt;</code>
-        <code>&lt;input type="radio"&gt;first&lt;/input&gt;</code>
-
-        <h4>Rendered element:</h4>
-
-        <label for="firstOne">
-            <input type="radio" id="firtOne" name="radioGroup"> first
-        </label>
-      </div>
+<!--
+  <a href="project1.html">
+      <img src="img/calendar.jpg" alt="calendar">
+  </a>
+-->
 
 
+</div>
 
 
-
-        <div class="story-content">
-        <h3>Image as a Link</h3>
-
-
-        <h4>CSS selector:</h4>
-        <p>.element</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="product_page.html" src="img/calendar.jpg" alt="calendar";/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-
-        <a href="project1.html">
-            <img src="img/calendar.jpg" alt="calendar">
-        </a>
-      </div>
+</div>
+</div>
+</div>
 
 
-        </section>
+</section>
 
 
-    </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -296,24 +329,19 @@
 
 
 
-    <section id="citations">
+    <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="citations.html">Citations</a></li>
+          <li><a href="styleGuide.html">Style Guide</a></li>
+          <li><a href="https://github.com/rababta/portfolio/tree/main/altarazi_rabab_P3_portfolio">Github</a></li>
+        </ul>
+      </div>
+   </nav>
+   </footer>
 
-
-      <h2>Citations</h2>
-
-      <div class="story-content">
-
-      <ul>
-      </ul>
-
-    </div>
-
-
-
-    </section>
-
-
-
+    <script src="script.js"></script>
 
 
 
